@@ -5,7 +5,7 @@ import LoginScreen from '@views/login/LoginScreen';
 import MainScreen from '@views/main/MainScreen';
 import SignUpScreen from '@views/signup/SignUpScreen';
 import { NoteRealm } from '@models/realm/note.realm';
-import NoteEditScreen from '@views/note/NoteEdit';
+import NoteEditScreen from '@views/note/NoteEditScreen';
 
 
 

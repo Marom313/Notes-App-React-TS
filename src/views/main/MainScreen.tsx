@@ -10,6 +10,7 @@ import { useNavigation } from '@react-navigation/native';
 import { NoteRealm } from '@models/realm/note.realm';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from 'navigation/RootStackParamList';
+import { useQuery } from '@realm/react';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList, 'Main'>;
 
@@ -37,7 +38,7 @@ const MainScreen = () => {
 
       <TouchableOpacity
         style={styles.fab}
-        onPress={() => navigation.navigate('NoteEdit', {})} // ✅ pass empty object
+        onPress={() => navigation.navigate('NoteEdit', {})} 
       >
         <Text style={styles.fabText}>+</Text>
       </TouchableOpacity>

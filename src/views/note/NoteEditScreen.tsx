@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet } from 'react-native';
 import { NoteRealm } from '@models/realm/note.realm';
+import { useRealm } from '@services/RealmProvider';
 import { RouteProp, useRoute } from '@react-navigation/native';
 import { RootStackParamList } from 'navigation/RootStackParamList';
-import { useRealm } from '@services/RealmProvider';
 
 type NoteEditRouteProp = RouteProp<RootStackParamList, 'NoteEdit'>;
 
-const NoteScreen = ({ navigation }: any) => {
+const NoteEditScreen = ({ navigation }: any) => {
   const realm = useRealm();
   const route = useRoute<NoteEditRouteProp>();
   const note = route.params?.note;
@@ -56,7 +56,7 @@ const NoteScreen = ({ navigation }: any) => {
   );
 };
 
-export default NoteScreen;
+export default NoteEditScreen;
 
 const styles = StyleSheet.create({
   container: {
