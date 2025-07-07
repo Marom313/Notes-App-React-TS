@@ -5,7 +5,7 @@ import {
   logout,
   getCurrentUser,
   watchAuthState,
-} from '../services/authService.js';
+} from '../services/authService';
 import { User } from 'firebase/auth';
 
 export function useAuthVM() {

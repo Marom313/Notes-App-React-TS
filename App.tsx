@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
+import AppRouter from './src/app/router';
 import { RealmProvider } from '@services/RealmProvider';
-import AppRouter from 'app/router';
 
 
 export default function App() {

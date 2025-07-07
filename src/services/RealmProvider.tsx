@@ -1,6 +1,7 @@
+import { NoteRealm } from '@models/realm/note.realm';
 import React, { ReactNode, useEffect, useState, useContext } from 'react';
 import Realm from 'realm';
-import { NoteRealm } from './note.realm';
+
 
 type RealmContextType = Realm | null;
 
